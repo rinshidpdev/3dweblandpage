@@ -1,0 +1,62 @@
+.carousel-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-card {
+    position: relative;
+    width: 33.33%; /* Show 3 images per row by default */
+    flex-shrink: 0;
+  }
+  
+  .carousel-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.6); */
+    padding: 20px;
+    color: white;
+  }
+  
+  .view-case-study {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .see-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: rgb(14, 14, 14);
+    color: white;
+    /* border: none; */
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    
+  }
+  
+  /* Responsive - Show 1 image per slide on small screens */
+  @media (max-width: 617px) {
+    .carousel-card {
+      width: 100%; /* Show 1 image per slide */
+    }
+  }
+  

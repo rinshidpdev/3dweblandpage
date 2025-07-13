@@ -1,0 +1,36 @@
+.cans-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    background-color: black;
+    padding: 5vw 0;
+    height: auto; /* Adjust height dynamically */
+    flex-wrap: wrap; /* Allows cans to wrap on small screens */
+  }
+  
+  .can {
+    width: 30vw; /* Scale dynamically with screen size */
+    max-width: 350px; /* Limit maximum size */
+    height: auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .cans-container {
+      gap: 20px; /* Reduce gap for smaller screens */
+    }
+  
+    .can {
+      width: 25vw; /* Increase relative width on smaller screens */
+      max-width: 150px; /* Adjust size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .can {
+      width: 35vw; /* Increase size for very small screens */
+      max-width: 120px;
+    }
+  }
+  

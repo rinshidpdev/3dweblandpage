@@ -1,0 +1,272 @@
+.strategy {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+    overflow: hidden;
+  }
+  
+  .content-wrapper {
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    gap: 30px;
+  }
+  
+  .strategy-content {
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .strategy-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .strategy-content p {
+    font-size: 23px;
+    line-height: 1.5;
+    opacity: 0.8;
+    margin-bottom: 30px;
+  }
+  
+  .branding-categories {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .branding-categories span {
+    position: relative;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  
+  .branding-categories span::before {
+    content: "|";
+    color: yellow;
+    position: absolute;
+    left: -10px;
+  }
+  
+  .branding-categories span:first-child::before {
+    content: "";
+    left: 0;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: rgb(7, 251, 80);
+    color: black;
+  }
+  
+  .strategy-image {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .main-object {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .bowl-image {
+    position: absolute;
+    top: -30px;
+    right: 80px;
+    width: 100px;
+    max-width: 100%;
+    animation: float 3s infinite ease-in-out;
+    z-index: 2;
+  }
+  
+  .second1 img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Large screens */
+  @media (max-width: 1280px) {
+    .strategy-content h1 {
+      font-size: 50px;
+    }
+    
+    .strategy-content p {
+      font-size: 20px;
+    }
+    
+    .main-object {
+      width: 450px;
+    }
+    
+    .bowl-image {
+      width: 90px;
+      right: 70px;
+    }
+  }
+  
+  /* Medium screens */
+  @media (max-width: 1024px) {
+    .content-wrapper {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+    }
+    
+    .strategy-content {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+    
+    .strategy-content h1 {
+      font-size: 42px;
+    }
+    
+    .strategy-content p {
+      font-size: 18px;
+    }
+    
+    .branding-categories {
+      justify-content: center;
+    }
+    
+    .buttons {
+      justify-content: center;
+    }
+    
+    .strategy-image {
+      justify-content: center;
+      margin-top: 30px;
+    }
+    
+    .main-object {
+      width: 80%;
+    }
+    
+    .bowl-image {
+      right: 15%;
+      top: -20px;
+      width: 80px;
+    }
+  }
+  
+  /* Tablet screens */
+  @media (max-width: 768px) {
+    .strategy {
+      padding: 50px 0;
+    }
+    
+    .strategy-content h1 {
+      font-size: 36px;
+    }
+    
+    .strategy-content p {
+      font-size: 16px;
+    }
+    
+    .branding-categories span {
+      font-size: 16px;
+    }
+    
+    .main-object {
+      width: 90%;
+    }
+    
+    .bowl-image {
+      width: 70px;
+      right: 10%;
+    }
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 480px) {
+    .strategy {
+      padding: 40px 0;
+    }
+    
+    .content-wrapper {
+      padding: 0 15px;
+    }
+    
+    .strategy-content h1 {
+      font-size: 28px;
+    }
+    
+    .strategy-content p {
+      font-size: 14px;
+    }
+    
+    .branding-categories {
+      gap: 15px;
+    }
+    
+    .branding-categories span {
+      font-size: 14px;
+      padding-left: 8px;
+    }
+    
+    .branding-categories span::before {
+      left: -8px;
+    }
+    
+    .buttons {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+    
+    .btn {
+      width: 100%;
+      max-width: 200px;
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+    
+    .bowl-image {
+      width: 60px;
+      top: -15px;
+      right: 8%;
+    }
+  }

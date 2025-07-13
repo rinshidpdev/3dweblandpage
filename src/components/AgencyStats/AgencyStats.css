@@ -1,0 +1,116 @@
+/* Reset default margin & padding */
+* {
+    /* margin: 0;
+    padding: 0; */
+    /* box-sizing: border-box; */
+  }
+  
+  /* Section Styling */
+  .agency-stats1 {
+    background-color: black;
+    color: white;
+    padding: 80px 5%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Changed from flex-start to center */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Text Content */
+  .agency-content1 {
+    max-width: 1300px;
+    width: 100%;
+  }
+  
+  .agency-content1 h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .agency-content1 p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Stats Section */
+  .stats-container1 {
+    display: flex;
+    justify-content: center; /* Changed from flex-start to center */
+    gap: 20px; /* Added more space between boxes */
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 100%; /* Added to ensure full width for centering */
+  }
+  
+  .stat-box1 {
+    background: black;
+    border: .3px solid white;
+    padding: 35px; /* Increased padding */
+    width: 350px; /* Increased width */
+    text-align: center;
+    height: 150px;
+  }
+  
+  /* Increased Number Size */
+  .stat-box1 span {
+    font-size: 42px; /* Larger number size */
+    font-weight: bold;
+  }
+  
+  /* Remove extra white space */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .agency-content1 h1 {
+      font-size: 36px;
+    }
+  
+    .stats-container1 {
+      flex-wrap: wrap;
+      justify-content: center; /* Ensure centering on medium screens */
+    }
+  
+    .stat-box1 {
+      width: 220px;
+    }
+  
+    .stat-box1 span {
+      font-size: 38px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .agency-content1 {
+      text-align: center; /* Center text on mobile */
+    }
+  
+    .agency-content1 h1 {
+      font-size: 28px;
+    }
+  
+    .agency-content1 p {
+      font-size: 14px;
+    }
+  
+    .stats-container1 {
+      flex-direction: column;
+      align-items: center; /* Center the stats boxes vertically */
+      justify-content: center; /* Center horizontally */
+    }
+  
+    .stat-box1 {
+      width: 220px;
+    }
+  
+    .stat-box1 span {
+      font-size: 36px;
+    }
+  }
