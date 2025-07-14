@@ -29,12 +29,12 @@ const HeroSection = () => {
       </div>
 
       <div className="hero-image-wrapper">
-        <img src={circleBg} alt="Background Circle" className="circle-bg" />
+       
        <img
   src={cameraImage}
   alt="Camera"
   className="camera-image"
-  data-aos="fade-right"
+  data-aos="fade-left"
 />
 
       </div>
