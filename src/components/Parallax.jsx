@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from '@studio-freight/lenis';
+import img from '../assets/gpt.png'
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);

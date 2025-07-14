@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0);
 

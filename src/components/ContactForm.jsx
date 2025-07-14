@@ -1,12 +1,16 @@
 import React from 'react';
-
+import { useEffect } from 'react';
+import AOS from 'aos';
 const ContactForm = () => {
+    useEffect(() => {
+  AOS.init({ duration: 1000 });
+}, []);
   return (
     <div className="contact-form-container" >
       <h1 className="contact-heading" >Let's Capture Wonder</h1>
       
       <div className="content-container" data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">
+     data-aos-anchor-placement="bottom">
         <div className="form-container">
           <div className="form-row">
             <input type="text" placeholder="Name" className="form-input" />
