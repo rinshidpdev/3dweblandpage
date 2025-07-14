@@ -41,9 +41,9 @@ const Footer = () => {
 
         <div className="footer-section contact-section">
           <h3>Contact Us</h3>
-          <p>Latifa Towers</p>
-          <p>34th Floor, Office 3401</p>
-          <p>Sheikh Zayed Road, Dubai</p>
+          <p>Towers</p>
+          <p>34th Floor, Office 347601</p>
+          <p> Dubai</p>
           <div className="contact-info">
             <p><span className="icon email-icon">&#9993;</span> hello@runshid</p>
             <p><span className="icon phone-icon" style={{backgroundColor:'white'}}>&#128222;</span> 47448844</p>
