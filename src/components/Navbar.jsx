@@ -50,9 +50,9 @@ const Navbar = () => {
           <div className="mobile-footer">
             <div className="footer-section">
               <h3 className="footer-heading">Meet Us</h3>
-              <p className="footer-text">Latifa Towers</p>
-              <p className="footer-text">34th Floor, Office 3401</p>
-              <p className="footer-text">Sheikh Zayed Road, Dubai</p>
+              <p className="footer-text"> Towers</p>
+              <p className="footer-text">34th Floor, Office 34501</p>
+              <p className="footer-text">new villai</p>
             </div>
             <div className="footer-section">
               <h3 className="footer-heading">Contact Us</h3>
